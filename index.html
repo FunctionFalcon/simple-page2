@@ -7,16 +7,64 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
             line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex-grow: 1;
         }
         h1 {
             color: #333;
         }
+        .content-section {
+            margin: 2rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Page</h1>
-    <p>This is a basic HTML page that we'll improve over time.</p>
+    <header>
+        <h1>Welcome to My Simple Page</h1>
+        <p>A demonstration of clean and structured HTML design</p>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>About Us</h2>
+            <p>This is a simple yet professional webpage that demonstrates basic HTML and CSS principles. We believe in clean, organized, and accessible web design.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Mission</h2>
+            <p>Our goal is to create web content that is both beautiful and functional. We focus on:</p>
+            <ul>
+                <li>Clean and semantic HTML structure</li>
+                <li>Responsive design principles</li>
+                <li>User-friendly interfaces</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Page. Created for demonstration purposes.</p>
+    </footer>
 </body>
 </html>
